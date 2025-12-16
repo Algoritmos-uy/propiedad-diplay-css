@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+.container {
+  box-sizing: border-box;
+  width: 60%;
+  margin: auto;
+  border: 2px solid #333;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.box {
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* Ejemplos de display */
+.block {
+  /*
+    display: block
+    ----------------
+    - Elementos con `display: block` ocupan todo el ancho disponible
+      de su contenedor y siempre empiezan en una nueva línea.
+    - Propiedades como width / height se aplican normalmente.
+    - Uso típico: <div>, <p>, encabezados, contenedores.
+  */
+  display: block;
+  height: 50px; /* demostración visual: altura fija para ver el comportamiento */
+}
+
+.inline {
+  /*
+    display: inline
+    -----------------
+    - Elementos `inline` fluyen dentro de la línea de texto.
+    - No respetan width/height (solo padding/margin horizontales afectan el flujo).
+    - No empiezan en una nueva línea; varios inline se colocan uno junto al otro.
+    - Uso típico: <span>, <a>, texto embebido.
+  */
+  display: inline;
+  padding: 6px; /* padding se aplica (especialmente horizontal) */
+  background-color: lightcoral;
+  margin-top: 6px; /* margin-top no desplaza el flujo vertical como en block */
+}
+
+.inline-block {
+  /*
+    display: inline-block
+    ----------------------
+    - Combina características de inline y block.
+    - Se sitúa en la misma línea (como inline) pero respeta width/height (como block).
+    - Muy útil para crear elementos alineados que necesitan tamaño fijo.
+  */
+  display: inline-block;
+  width: 100px; /* ancho fijo para comparar con inline */
+  height: 60px; /* altura fija para visualizar caja */
+  background-color: lightblue;
+}
+.none {
+  /*
+    display: none
+    ----------------
+    - El elemento se elimina del flujo del documento.
+    - No ocupa espacio y no es visible. Distinto a `visibility: hidden`.
+    - Útil para ocultar contenido que no debe renderizarse.
+  */
+  display: none;
+}
+
+/* Estilo para notas explicativas visibles en la página
+   Clase: .example-note
+   - Fuente pequeña y color gris para ser discreto en ejemplo didáctico.
+*/
+.example-note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-style: italic;
+}

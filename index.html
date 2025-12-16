@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ejemplo de Propiedad Display</title>
+
+</head>
+
+<body>
+
+    <!-- Ejemplo de display: block -->
+    <!--
+        Explicación didáctica:
+        - Cada elemento con clase `block` ocupa toda la línea.
+        - Observa cómo cada <div> empieza en nueva línea y tiene ancho completo del contenedor.
+    -->
+    <div class="container">
+        <h2>Display: Block</h2>
+        <div class="box block">Caja 1 (Block)</div>
+        <div class="box block">Caja 2 (Block)</div>
+        <div class="box block">Caja 3 (Block)</div>
+        <div class="box block">Caja 4 (Block)</div>
+        <p class="example-note">Nota: Los elementos con <code>display: block</code> ocupan toda la línea y aceptan <code>width</code>/<code>height</code>. Úsalos para contenedores.</p>
+    </div>
+
+    <!-- Ejemplo de display: inline -->
+    <!--
+        Explicación didáctica:
+        - `inline` no fuerza salto de línea: varios elementos aparecen en la misma línea.
+        - No puedes controlar width/height de forma fiable en elementos inline.
+        - Observa el padding y el background que sí se aplican.
+    -->
+    <div class="container">
+        <h2>Display: Inline</h2>
+        <span class="box inline">Caja 1 (Inline)</span>
+        <span class="box inline">Caja 2 (Inline)</span>
+        <span class="box inline">Caja 3 (Inline)</span>
+        <span class="box inline">Caja 4 (Inline)</span>
+        <span class="box inline">Caja 5 (Inline)</span>
+        <span class="box inline">Caja 6 (Inline)</span>
+        <span class="box inline">Caja 7 (Inline)</span>
+        <span class="box inline">Caja 8 (Inline)</span>
+        <p class="example-note">Nota: Elementos <code>inline</code> fluyen en la misma línea. No respetan width/height de manera fiable; son ideales para texto embebido.</p>
+    </div>
+
+    <!-- Ejemplo de display: inline-block -->
+    <!--
+        Explicación didáctica:
+        - `inline-block` permite que los elementos se alineen en línea pero mantengan width/height.
+        - Útil para tarjetas o botones alineados que deben tener dimensiones similares.
+    -->
+    <div class="container">
+        <h2>Display: Inline-Block</h2>
+        <div class="box inline-block">Caja 1 (Inline-Block)</div>
+        <div class="box inline-block">Caja 2 (Inline-Block)</div>
+        <div class="box inline-block">Caja 3 (Inline-Block)</div>
+        <div class="box inline-block">Caja 4 (Inline-Block)</div>
+        <div class="box inline-block">Caja 5 (Inline-Block)</div>
+        <div class="box inline-block">Caja 6 (Inline-Block)</div>
+        <div class="box inline-block">Caja 7 (Inline-Block)</div>
+        <div class="box inline-block">Caja 8 (Inline-Block)</div>
+        <p class="example-note">Nota: <code>inline-block</code> combina lo mejor de inline y block: se alinea en línea y respeta <code>width</code>/<code>height</code>.</p>
+    </div>
+
+    <!-- Ejemplo de display: none -->
+    <!--
+        Explicación didáctica:
+        - `display: none` elimina el elemento del flujo del documento: no ocupa espacio.
+        - Distinto de `visibility: hidden`, que lo oculta pero mantiene el espacio reservado.
+    -->
+    <div class="container">
+        <h2>Display: None</h2>
+        <div class="box none">Esta caja está oculta (None)</div>
+        <div class="box block">Esta caja es visible (Block)</div>
+        <p class="example-note">Nota: <code>display: none</code> retira el elemento del flujo. No ocupa espacio; diferente a <code>visibility: hidden</code>.</p>
+    </div>
+
+</body>
+
+</html>
