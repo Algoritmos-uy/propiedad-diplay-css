@@ -27,7 +27,7 @@ Opciones rápidas para ver el proyecto en tu máquina:
 python -m http.server 8000
 ```
 
-    - Luego abre http://localhost:8000 en tu navegador.
+- Luego abre (<http://localhost:8000>) en tu navegador.
 
 ## Qué observar en los ejemplos
 
