@@ -33,13 +33,9 @@ python -m http.server 8000
 
 - Block: cada elemento ocupa la línea completa y acepta width/height.
 - Inline: los elementos fluyen en la misma línea; width/height no se aplican de la misma forma.
-- Inline-block: se alinean en línea pero sí respetan width/height.
+- Inline-block: se muestran en línea pero sí respetan width/height.
 - None: el elemento se elimina del flujo y no ocupa espacio (distinto a `visibility: hidden`).
-
-## Contribuciones
-
-Puedes mejorar los ejemplos añadiendo controles interactivos (por ejemplo, botones para alternar `display`) o anotaciones visibles para estudiantes.
 
 ## Licencia
 
-Usa el contenido libremente para enseñanza y adaptaciones. Si quieres una licencia formal, dime cuál prefieres y la añado.
+Usa el contenido libremente para aprenduzaje y adaptaciones.
