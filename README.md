@@ -1,4 +1,4 @@
-# propiedad-diplay-css
+# propiedad-display-css
 
 Pequeño proyecto didáctico que muestra ejemplos prácticos del comportamiento de la propiedad CSS `display`.
 
